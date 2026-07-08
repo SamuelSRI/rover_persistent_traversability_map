@@ -1,0 +1,26 @@
+persistent_traversability_map_node:
+  ros__parameters:
+    input_map_topic: "/traversability_grid"
+    output_map_topic: "/persistent_traversability_grid"
+
+    # Important:
+    # Use "map" if you already have map -> odom.
+    # Use "odom" only if you do not have global localization.
+    map_frame: "map"
+
+    # Persistent map size
+    resolution: 0.10
+    width_m: 60.0
+    height_m: 60.0
+    origin_x: -30.0
+    origin_y: -30.0
+
+    publish_rate: 2.0
+
+    # OccupancyGrid interpretation
+    lethal_threshold: 70
+    free_threshold: 20
+
+    occupied_value: 100
+    free_value: 0
+    unknown_value: -1
