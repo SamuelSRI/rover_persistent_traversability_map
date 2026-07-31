@@ -10,12 +10,12 @@ persistent_traversability_map_node:
 
     # Persistent map size
     resolution: 0.10
-    width_m: 500.0
-    height_m: 500.0
-    origin_x: -250.0
-    origin_y: -250.0
+    width_m: 60.0
+    height_m: 60.0
+    origin_x: -30.0
+    origin_y: -30.0
 
-    publish_rate: 2.0
+    publish_rate: 5.0
 
     # OccupancyGrid interpretation
     lethal_threshold: 70
